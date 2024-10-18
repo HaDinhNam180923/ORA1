@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ORA1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo_8A3_icon.ico" type="image/x-icon">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="logoo w3-bar-item w3-button w3-theme-l1">
+                <img class="logo" src="image/logo.png" alt="Logo">
+            </a>
+
+            <a href="in4sj.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+            <a href="webtech.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+            <a href="#" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#stu1">Thông tin cơ bản</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#stu2">Kinh nghiệm</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#stu3">Sở thích cá nhân</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the siHTML và CSS - Nền tảng của Webdebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64 w3-padding-641">
+            <div id="stu1" class="adpic w3-third w3-container">
+                <a class="addd" href="https://www.facebook.com/hacaothu.03">
+                    <img src="image/avt.png" alt="Ad Image"
+                        class="stupic adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+
+            <div class="w3-twothird w3-container ttbs">
+                <div class="w3-half w3-container">
+                    <p><span style="font-weight: bold;">Họ và tên sinh viên: </span>Hà Đình Nam</p>
+                    <p><span style="font-weight: bold;">Mã số sinh viên: </span>20215095</p>
+                    <p><span style="font-weight: bold;">Giới tính: </span>Nam</p>
+                    <p><span style="font-weight: bold;">Email: </span>nam.hd215095@sis.hust.edu.vn</p>
+                    <p><span style="font-weight: bold;">Số điện thoại: </span>0398 666 542</p>
+                </div>
+                <div class="w3-half w3-container">
+                    <p><span style="font-weight: bold;">Ngành học: </span>Công nghệ thông tin Việt Nhật</p>
+                    <p><span style="font-weight: bold;">Lớp: </span>VN01-K66</p>
+                    <p><span style="font-weight: bold;">Ngày sinh: </span>18/09/2003</p>
+                    <p><span style="font-weight: bold;">Quê quán: </span>Thái Bình, Việt Nam</p>
+                    <p><span style="font-weight: bold;">Sở thích: </span>Đọc sách, đá bóng</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="stu2">Kinh nghiệm</h1>
+                <p>
+                    Tôi có niềm đam mê mạnh mẽ với việc học hỏi các công nghệ mới. Trong suốt thời gian qua, tôi đã tự
+                    học và nghiên cứu nhiều ngôn ngữ lập trình như C, Java, C++, Assembly và nhiều công nghệ khác. Mỗi
+                    khi học được một công nghệ mới, tôi luôn cảm thấy rất hứng thú. Tôi nhận ra rằng ngành IT không
+                    ngừng phát triển và luôn thay đổi, vì vậy việc học hỏi những công nghệ mới là điều không thể thiếu
+                    để trở thành một kỹ sư giỏi.
+                </p>
+                <p>
+                    Với lòng hiếu kỳ của mình, tôi mong muốn học hỏi thêm nhiều điều và tiếp tục trau dồi
+                    kiến thức chuyên môn cũng như phát triển bản thân.
+                </p>
+                style="font-size: 20px;"
+                <h2 style="font-size: 20px;">Kỹ Năng Chuyên Môn</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Loại</th>
+                            <th>Công Cụ/Kỹ Năng</th>
+                            <th>Thời Gian Sử Dụng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>Java</td>
+                            <td>10 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>C</td>
+                            <td>24 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>C++</td>
+                            <td>24 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>JavaScript</td>
+                            <td>3 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>HTML</td>
+                            <td>3 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>CSS</td>
+                            <td>3 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Ngôn ngữ lập trình</td>
+                            <td>Assembly</td>
+                            <td>10 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Framework</td>
+                            <td>Node JS</td>
+                            <td>2 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành</td>
+                            <td>Linux</td>
+                            <td>24 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành</td>
+                            <td>Windows</td>
+                            <td>9 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành</td>
+                            <td>Ubuntu</td>
+                            <td>24 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Cơ sở dữ liệu</td>
+                            <td>MySQL</td>
+                            <td>10 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ thống quản lý phiên bản</td>
+                            <td>Git</td>
+                            <td>10 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Công cụ quản lý phát triển</td>
+                            <td>Asana</td>
+                            <td>10 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Công cụ quản lý phát triển</td>
+                            <td>Slack</td>
+                            <td>9 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Công cụ hội họp</td>
+                            <td>Google Meet</td>
+                            <td>10 tháng</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd" href="https://fullstack.edu.vn/">
+                    <img src="image/f8.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="stu3">Sở thích</h1>
+                <p class="w3-text-teal1">
+                <div class="hobby">
+                    <h2 style="font-size: 20px;">Đọc Truyện Manga</h2>
+
+                    <p class="w3-text-teal1">
+                        Tôi rất thích đọc truyện tranh manga, đặc biệt là những bộ truyện thuộc thể loại hành động,
+                        phiêu lưu và giả tưởng. Truyện manga không chỉ giúp tôi giải trí mà còn mang lại cho tôi những
+                        bài học cuộc sống sâu sắc qua những câu chuyện và nhân vật độc đáo.
+                    </p>
+                    <img class="minhhoa" src="image/Doremon009_02.png" alt="">
+                </div>
+
+                <div class="hobby">
+                    <h2 style="font-size: 20px;">Nghe Nhạc</h2>
+                    <p class="w3-text-teal1">
+                        Âm nhạc là một phần không thể thiếu trong cuộc sống của tôi. Tôi thường xuyên nghe nhạc vào thời
+                        gian rảnh rỗi, đặc biệt là các thể loại pop, rock và indie. Âm nhạc giúp tôi thư giãn và tìm cảm
+                        hứng cho công việc học tập.
+                    </p>
+                    <img class="minhhoa" src="image/thienlyoi.png" alt="">
+
+                </div>
+
+                <div class="hobby">
+                    <h2 style="font-size: 20px;">Xem Đá Bóng</h2>
+                    <p class="w3-text-teal1">
+                        Tôi cũng rất đam mê thể thao, đặc biệt là môn bóng đá. Mỗi cuối tuần, tôi thường dành thời gian
+                        xem các trận đấu của các giải bóng đá lớn như Premier League, La Liga. Xem bóng đá không chỉ
+                        mang lại niềm vui mà còn giúp tôi thư giãn sau những giờ học căng thẳng.
+                    </p>
+                    <img class="minhhoa" src="image/football.png" alt="">
+
+                </div>
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd"
+                    href="https://r.search.yahoo.com/_ylt=Awr1SnDwVRJnDQIAF89rUwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1730464496/RO=10/RU=https%3a%2f%2ff88.vn%2f/RK=2/RS=N9B9gRbZSoUJg4i95YtGylYRBkE-">
+                    <img src="image/F88-2.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="#">1</a>
+                <a class="w3-button w3-hover-black" href="#">2</a>
+                <a class="w3-button w3-hover-black" href="#">3</a>
+                <a class="w3-button w3-hover-black" href="#">4</a>
+                <a class="w3-button w3-hover-black" href="#">5</a>
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+
+        <div class="w3-bottom-bar">
+            <a href="in4sj.html"><i class="fa-solid fa-book" style="color: #ffffff;"></i></a>
+            <a href="webtech.html"><i class="fa-solid fa-microchip" style="color: #ffffff;"></i></a>
+            <a href="student.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+        </div>
+        <footer id="myFooter">
+            <div class="footer-content">
+                <h4>Footer</h4>
+                <p>Cảm ơn bạn đã ghé thăm trang web của chúng tôi!</p>
+                <div class="social-media">
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Powered by <a href="#" target="_blank">DN</a></p>
+            </div>
+        </footer>
+
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

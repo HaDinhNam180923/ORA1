@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ORA1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo_8A3_icon.ico" type="image/x-icon">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="logoo w3-bar-item w3-button w3-theme-l1">
+                <img class="logo" src="image/logo.png" alt="Logo">
+            </a>
+
+            <a href="#" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+            <a href="webtech.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+            <a href="student.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh
+                viên</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#in4sj1">Mô tả môn học</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#in4sj2">Điều kiện</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#in4sj3">Câu hỏi thường gặp</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="in4sj1">Mô tả môn học</h1>
+                <p class="w3-text-teal1">Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các ứng
+                    dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả năng:
+
+                <ul>
+                    <li>Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các lĩnh vực
+                        khác
+                        nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử
+                        (eCommerce,
+                        eLearning, eGoverment,...)
+                    </li>
+                    <li>
+                        Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.
+                    </li>
+                </ul>
+
+                Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần
+                thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.</p>
+                <img class="minhhoa" src="image/abc.png" alt="">
+            </div>
+            <div class="adpic w3-third w3-container">
+                <a class="addd" href="https://bonoivu.daotao.ai/courses/course-v1:SoICT+IT4409+HoangPH/course/">
+                    <img src="image/monhoc1.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="in4sj2">Điều kiện</h1>
+                <p class="w3-text-teal1">
+                <ul>
+                    <li>Học phần tiên quyết: Không có.</li>
+                    <li>Học phần học trước:
+                        <ul>
+                            <li>IT3090 hoặc IT3091: Cơ sở dữ liệu</li>
+                            <li>IT3100 hoặc IT3600: Lập trình hướng đối tượng</li>
+                        </ul>
+                    </li>
+                    <li>Học phần song hành: Không có.</li>
+                </ul>
+                </p>
+                <img class="minhhoa" src="image/oop.png" alt="">
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd" href="https://phanmemmienphi.vn/co-so-du-lieu-la-gi/">
+                    <img src="image/database.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="in4sj3">Câu hỏi thường gặp</h1>
+                <p class="w3-text-teal1">
+                <ul>
+                    <li style="font-weight: bold;">SoICT viết tắt của cụm từ gì?</li>
+                    <ul>
+                        <li>School of Information and Communication Technology</li>
+                        <li>Xem website chính thức https://soict.hust.edu.vn để có thêm thông tin chi tiết.<br><br></li>
+                    </ul>
+                    <li style="font-weight: bold;">Các ứng dụng nào trong thực tế có liên quan tới học phần này?
+                    </li>
+                    <ul>
+                        <li>Học phần được ứng dụng trong nhiều mặt của đời sống xã hội và nghiên cứu.</li>
+                    </ul>
+                </ul>
+                </p>
+                <img class="minhhoa" src="image/logo-soict-hust-1.png" alt="">
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd" href="https://soict.hust.edu.vn/">
+                    <img src="image/soict.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="#">1</a>
+                <a class="w3-button w3-hover-black" href="#">2</a>
+                <a class="w3-button w3-hover-black" href="#">3</a>
+                <a class="w3-button w3-hover-black" href="#">4</a>
+                <a class="w3-button w3-hover-black" href="#">5</a>
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+
+        <footer id="myFooter">
+            <div class="footer-content">
+                <h4>Footer</h4>
+                <p>Cảm ơn bạn đã ghé thăm trang web của chúng tôi!</p>
+                <div class="social-media">
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Powered by <a href="#" target="_blank">DN</a></p>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+    <div class="w3-bottom-bar">
+        <a href="in4sj.html"><i class="fa-solid fa-book" style="color: #ffffff;"></i></a>
+        <a href="webtech.html"><i class="fa-solid fa-microchip" style="color: #ffffff;"></i></a>
+        <a href="student.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

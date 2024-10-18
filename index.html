@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ORA1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo_8A3_icon.ico" type="image/x-icon">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a class="logoo w3-bar-item w3-button w3-theme-l1">
+                <img class="logo" src="image/logo.png" alt="Logo">
+            </a>
+
+            <a href="in4sj.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+            <a href="webtech.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ web</a>
+            <a href="student.html" class="hoho w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh
+                viên</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#khaigiang">Khai giảng</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#seminar">Seminar</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#congty">Công ty liên kết</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="khaigiang">Khai giảng lớp Web technologies and e-Services tháng 10/2024
+                </h1>
+                <p class="w3-text-teal1">Lớp "Web Technologies and e-Services" khai giảng vào tháng 10/2024, mang đến
+                    cho học viên cơ hội tìm
+                    hiểu và nắm bắt những công nghệ mới nhất liên quan đến phát triển web và các dịch vụ trực tuyến.
+                    Khóa học này sẽ tập trung vào các khía cạnh cốt lõi của lập trình web, bao gồm HTML, CSS,
+                    JavaScript, cũng như các framework hiện đại như React hay Angular. Ngoài ra, học viên còn được tiếp
+                    cận với các công nghệ và phương pháp xây dựng dịch vụ điện tử (e-Services), bao gồm quản lý dữ liệu,
+                    bảo mật thông tin và tương tác người dùng. Khóa học không chỉ phù hợp cho những người mới bắt đầu mà
+                    còn dành cho các chuyên gia muốn cập nhật và nâng cao kiến thức về các xu hướng công nghệ web hiện
+                    đại.</p>
+                <img class="minhhoa" src="image/mhmh.png" alt="">
+
+            </div>
+            <div class="adpic w3-third w3-container">
+                <a class="addd" href="https://www.educba.com/what-is-web-services/">
+                    <img src="image/ad1.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+                <a class="addd" href="https://www.lsnsoft.com/all-about-web-technologies/">
+                    <img src="image/ad2.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="seminar">Thông tin Seminar</h1>
+                <p class="w3-text-teal1">Song song với lớp học "Web Technologies and e-Services," một buổi seminar
+                    chuyên đề sẽ được tổ chức
+                    vào cuối tháng 10/2024, tập trung vào những xu hướng và thách thức mới trong việc phát triển ứng
+                    dụng web và dịch vụ điện tử. Buổi seminar sẽ quy tụ các chuyên gia hàng đầu trong ngành công nghệ
+                    thông tin, chia sẻ về các chủ đề như bảo mật web, tối ưu hóa trải nghiệm người dùng (UX/UI), và sự
+                    phát triển của các nền tảng điện toán đám mây hỗ trợ dịch vụ điện tử. Học viên tham dự không chỉ có
+                    cơ hội cập nhật kiến thức mà còn được trực tiếp giao lưu, thảo luận với các diễn giả và những người
+                    làm trong ngành, mở ra nhiều cơ hội học hỏi và phát triển sự nghiệp.</p>
+                <img class="minhhoa" src="image/mhsmn.png" alt="">
+
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd" href="https://www.techbasevn.com/blog-events/chia-se-ve-tech-week-2024.html">
+                    <img src="image/seminar.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal" id="congty">Các Công Ty Hàng Đầu Liên Quan Đến Công Nghệ Web Và Dịch Vụ Điện Tử
+                </h1>
+                <p class="w3-text-teal1">Trong bối cảnh phát triển mạnh mẽ của công nghệ web và dịch vụ điện tử, nhiều
+                    công ty lớn đã đi đầu
+                    trong việc cung cấp giải pháp và nền tảng kỹ thuật số cho các doanh nghiệp. Google là một trong
+                    những tên tuổi lớn, với hệ sinh thái phong phú từ các công cụ phát triển web như Google Cloud,
+                    Firebase, đến các dịch vụ tích hợp AI giúp tối ưu hóa trải nghiệm người dùng. Amazon Web Services
+                    (AWS) cũng là một nền tảng hàng đầu cung cấp các giải pháp điện toán đám mây và dịch vụ điện tử với
+                    khả năng mở rộng linh hoạt, giúp doanh nghiệp vận hành hiệu quả. Ngoài ra, Microsoft với Azure và
+                    GitHub đang hỗ trợ phát triển ứng dụng web qua các dịch vụ lưu trữ, quản lý mã nguồn, và triển khai
+                    ứng dụng. Các công ty này không chỉ mang đến những công cụ công nghệ tiên tiến mà còn góp phần định
+                    hình tương lai của web và dịch vụ điện tử.</p>
+                <img class="minhhoa" src="image/mhgg.png" alt="">
+
+            </div>
+            <div class="w3-third w3-container">
+                <a class="addd" href="https://vi.wikipedia.org/wiki/Google">
+                    <img src="image/google.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+                <a class="addd" href="https://vi.wikipedia.org/wiki/Microsoft">
+                    <img src="image/microsoft.png" alt="Ad Image"
+                        class="adpic1 w3-border w3-padding-large w3-padding-64 w3-center">
+                </a>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="#">1</a>
+                <a class="w3-button w3-hover-black" href="#">2</a>
+                <a class="w3-button w3-hover-black" href="#">3</a>
+                <a class="w3-button w3-hover-black" href="#">4</a>
+                <a class="w3-button w3-hover-black" href="#">5</a>
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+        <div class="w3-bottom-bar">
+            <a href="in4sj.html"><i class="fa-solid fa-book" style="color: #ffffff;"></i></a>
+            <a href="webtech.html"><i class="fa-solid fa-microchip" style="color: #ffffff;"></i></a>
+            <a href="student.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+        </div>
+
+        <footer id="myFooter">
+            <div class="footer-content">
+                <h4>Footer</h4>
+                <p>Cảm ơn bạn đã ghé thăm trang web của chúng tôi!</p>
+                <div class="social-media">
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Powered by <a href="#" target="_blank">DN</a></p>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
